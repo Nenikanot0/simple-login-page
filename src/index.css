@@ -1,0 +1,162 @@
+/* Importing Montserrat font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgb(202, 158, 242);
+}
+.login-container{
+    position: relative;
+    width: 400px;
+    height: 400px;
+    padding: 10px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    display: flex;  
+    flex-direction: column;
+    justify-content: center;    
+    align-items: center;
+}
+.login-container h3{
+    font-size: 21px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    margin-top: -50px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+.separator{
+    background-color: #ccc;
+    height: 1px;
+    width: 90%;
+    margin: 15px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.separator span{
+    background-color: #fff;
+    padding: 0 10px;
+    color: #000000;
+    font-size: 14px;
+}
+.social-button{
+    gap: 10px;
+    margin-left:10px;
+    padding: 5px 8px;
+    border-radius: 8px;
+    border-style:solid;
+    border-width: 1px;
+}
+.social-button:hover{
+    background-color: rgb(230, 230, 230);
+    cursor: pointer;
+}
+.social-icon{
+    height: 40px;
+    width: 40px;
+}
+.login-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+.login-form i{
+    position: absolute;
+    margin-left: 10px;
+    color: #999;
+}
+.login-form a{
+    text-decoration: none;
+    font-size: 15px;
+    color: rgb(59, 23, 112);
+}
+.login-button{
+    width: 100px;
+    padding: 8px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(71, 10, 129);
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+    margin-top: auto;
+    margin-bottom: 9px;
+}
+.login-button:hover{
+    background-color: rgb(101, 36, 158);
+}
+.input-field{
+    padding: 5px 10px 5px 10px;
+    border: 2px solid #777;
+    border-radius: 5px;
+    outline: none;
+
+}
+.loginPass{
+    padding-right: 2.5rem;
+}
+.input-wrapper{
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.input-wrapper :placeholder-shown{
+    padding-left: 2.5rem;
+}
+
+.input-wrapper input{
+    width: 280px;
+    height: 30px;
+    font-size: small;
+    box-sizing: border-box;
+    padding-left: 2.5rem;
+}
+.login-form .input-wrapper i{
+    position: absolute;
+    margin-left: 0px;
+    color: #999;
+    left: 15.5rem;
+    transform: translateY(-5%);
+}
+.input-wrapper i:not(.eye-icon){
+    left: 0.9rem;
+    pointer-events: none;
+}
+.input-wrapper i.eye-icon{
+    right: 0.9rem;
+    cursor: pointer;
+    font-size: 1.25rem;
+    color: #555;
+    display: none;
+}
+.input-wrapper input:valid ~ .eye-icon{
+    display: block;
+}
+.forgot{
+    margin-left: 0;
+    text-decoration: none;
+}
+.forgot:hover{
+    text-decoration: underline;
+}
+.signup-text a {
+    text-decoration: none;
+}
+.signup-text a:hover{
+    text-decoration: underline;
+}
