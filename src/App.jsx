@@ -13,7 +13,7 @@ const App = () => {
         <button className="login-button">Log In</button>
       </form>
 
-      <p className="signup-text">Don't have an account? <a href="#">Signup now</a> </p>
+      <p className="signup-text">Don't have an account? <a href="#">Create account</a> </p>
     </div>
 
   )
